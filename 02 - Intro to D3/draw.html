@@ -150,14 +150,14 @@
           points.push(point);
         }
 
-        // Update the thickness span when the range slider changes
+        // // Update the thickness span when the range slider changes
         const rangeSlider = document.querySelector('#thickness-range');
         const rangeText = document.querySelector('#thickness-span');
         rangeSlider.addEventListener('change', function() {
             rangeText.innerHTML = rangeSlider.value;
         });
 
-        // Erase points when clicked
+        // // Erase points when clicked
         document.querySelector("#erase-button").onclick = function() {
             for (let i = 0; i < points.length; i++)
                 points[i].remove();
